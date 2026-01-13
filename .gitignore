@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Distribution / Kaggle / Colab
+.ipynb_checkpoints/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Modèles IA (Trop lourds pour GitHub standard)
+*.h5
+*.pth
+*.pt
+*.pkl
+*.bin
+*.zip
+# Si vous voulez exclure le dossier models entier :
+models/
+results/
+logs/
+
+# IDE
+.vscode/
+.idea/
+
+# Ignorer les modèles lourds
+*.safetensors
+*.bin
+*.pth
+models/
+results/
+
+# Ignorer les datasets s'ils sont trop gros (les PDFs)
+Data/data_rag/
+*.pdf
