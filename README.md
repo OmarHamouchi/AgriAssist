@@ -14,7 +14,7 @@
 
 Le cœur de l'innovation réside dans le **Smart Router**. Contrairement à un RAG classique qui cherche dans toute la base documentaire, AgriAssist identifie l'intention de l'utilisateur (Maladie, Irrigation, etc.) et ne consulte que les documents pertinents, réduisant ainsi le bruit et augmentant la précision.
 
-![Architecture Globale](screenshots/architecture.jpg)
+![Architecture Globale](screenshots/architecture.png)
 *Figure 1 : Pipeline de traitement : Classification, Routage Intelligent et Génération RAG.*
 
 ---
@@ -26,7 +26,7 @@ Le projet s'appuie sur un dataset robuste construit spécifiquement pour le doma
 * **Dataset de Questions :** +20,000 questions générées et augmentées, réparties sur 4 classes (Irrigation, Maladies, Pesticides, Récolte).
 * **Corpus RAG :** Collection de documents techniques PDF segmentés et indexés.
 
-![Analyse des Données](screenshots/data_eda.jpg)
+![Analyse des Données](screenshots/data_eda.png)
 *Figure 2 : Distribution des classes, longueur des questions et analyse du corpus documentaire.*
 
 ---
@@ -47,7 +47,7 @@ Nous avons réalisé un Fine-Tuning du modèle **UBC-NLP/MarBERT** (spécialisé
 * **Résultat :** Accuracy de **97.40%**.
 * **Avantage :** Meilleure compréhension du contexte et gestion supérieure du "Rappel" (Recall) sur toutes les classes.
 
-![Courbes MarBERT](screenshots/marbert_results.jpg)
+![Courbes MarBERT](screenshots/marbert_results.png)
 *Figure 3 : Courbes d'apprentissage (Loss & Accuracy) du modèle MarBERT.*
 
 ---
@@ -56,7 +56,7 @@ Nous avons réalisé un Fine-Tuning du modèle **UBC-NLP/MarBERT** (spécialisé
 
 L'application finale offre une interface utilisateur conviviale et un terminal de trace pour visualiser le processus de décision de l'IA (Classification -> Routing -> Retrieval).
 
-![Interface Streamlit](screenshots/demo_interface.jpg)
+![Interface Streamlit](screenshots/demo_interface.png)
 *Figure 4 : À gauche, le Chatbot répond à une question sur les maladies. À droite, le terminal backend montre le score de confiance (54.6%) et les documents récupérés.*
 
 ---
